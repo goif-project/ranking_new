@@ -19,3 +19,5 @@ npm run build     // js、stylusファイルをbundle.jsにコンパイル
   各種コンパイル前コードの格納場所
 
 そのうち追記
+
+hogehogeagoago
