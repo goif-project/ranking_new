@@ -22,3 +22,4 @@ npm run build     // js、stylusファイルをbundle.jsにコンパイル
 
 hogehogeagoago
 あごおおおお
+あごんご
