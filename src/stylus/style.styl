@@ -1,11 +1,351 @@
-@charset "UTF-8";
+@charset "UTF-8"
 
- .index_header
-    p
-        color #ddd
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin 0
+  padding 0
+  border 0
+  font-size 100%
+  font inherit
+  vertical-align baseline
 
-// 各ページの親要素にページを分類するclassを作成する
-.ago_header
-    p
-        font-size 50px
-        color red
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display block
+
+body
+  line-height 1
+
+ol, ul
+  list-style none
+
+blockquote, q
+  quotes none
+
+blockquote
+  &:before, &:after
+    content ''
+    content none
+
+q
+  &:before, &:after
+    content ''
+    content none
+
+table
+  border-collapse collapse
+  border-spacing 0
+
+html, body
+  height 100%
+
+html
+  min-height 100%
+  -webkit-text-size-adjust 100%
+
+body
+  min-height 100%
+  font-size 14px
+  color #333
+  line-height 1.3
+  word-wrap break-word
+  font-family YuGothic, '游ゴシック', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif
+  background-color #fafafa
+
+a
+  color inherit
+  text-decoration none
+
+img
+  vertical-align middle
+  -webkit-touch-callout none
+
+ol, ul, li
+  list-style none
+
+span, i
+  display inline-block
+
+input, textarea, button
+  margin 0
+  padding 0
+  outline none
+  border none
+  background-color inherit
+  color inherit
+  -webkit-appearance none
+
+.rank_btn
+  width 80%
+  margin 0 auto
+  > a
+    display block
+    width 100%
+    height 20vw
+    line-height calc(20vw - 6px)
+    margin auto
+    border 3px solid #f5f5f5
+    box-sizing border-box
+    border-radius 20px
+    font-size 16px
+    font-weight bold
+    letter-spacing 4px
+    text-align center
+    color #f5f5f5
+    background-color #F2784B
+
+.title_text, .detail_text
+  line-height 1.666
+
+.mv_1
+  position relative
+  opacity 0
+  transform translateY(10px)
+  transition 1s cubic-bezier(0.33, 0.065, 0, 1)
+  transition-delay .25s
+
+.mv_2
+  opacity 1.0
+  transform translate(0, 0)
+
+.under_line_1
+  position relative
+  display table
+  margin 0 auto
+
+.under_line_2
+  position relative
+  display inline-block
+
+.under_line_1
+  :before
+    position absolute
+    top calc(35% + 25px)
+    left 0
+    content ""
+    display inline-block
+    width 0
+    height 5px
+    background #e6ff1d
+    border-radius 10px
+    transition 1s cubic-bezier(0.755, 0, 0.135, 1)
+    transition-delay .15s
+
+.under_line_2
+  :before
+    position absolute
+    top calc(35% + 25px)
+    left 0
+    content ""
+    display inline-block
+    width 0
+    height 5px
+    background #009264
+    border-radius 10px
+    transition 1s cubic-bezier(0.755, 0, 0.135, 1)
+    transition-delay .15s
+
+.under_line_view
+  :before
+    width 100%
+
+.wrapper
+  height 100%
+  width 100%
+  max-width 750px
+  margin 0 auto
+  #firstview
+    position relative
+    background url(../img/firstview.png) no-repeat center top
+    background-size 100% auto
+    height 100%
+    max-height 667px
+    h1
+      width 80%
+      margin 0 auto
+      padding 130px 0 0
+      img
+        width 100%
+    .rank_btn
+      margin-top 75%
+  #about
+    border-top 3px solid #fff
+    background #009264
+    color #fff
+    h2
+      font-size 25px
+      font-weight bold
+      text-align center
+      padding 5% 0
+    .title_text
+      width 90%
+      margin 0 auto
+      padding 0 0 5%
+      font-size 15px
+  #flow
+    border-top 3px solid #fff
+    background #7FDEF4
+    padding 0 0 5%
+    color #000
+    font-weight bold
+    h2
+      font-size 25px
+      text-align center
+      padding 5% 0
+    .flow_detail
+      width 90%
+      margin 0 auto
+      padding 0 0 5%
+      h3
+        font-size 20px
+        padding 3% 0
+        text-align center
+        .number
+          padding 0 5px 0 0
+      .image_wrap
+        img
+          width 100%
+      .skill_wrap
+        padding 3% 5%
+        font-size 14px
+        .skill
+          margin 15px 0
+        .skill_1
+          background url(../img/1.png) no-repeat 95% center
+          background-size 50px
+        .skill_2
+          background url(../img/2.png) no-repeat 95% center
+          background-size 50px
+        .skill_3
+          background url(../img/3.png) no-repeat 95% center
+          background-size 50px
+        .skill_4
+          background url(../img/4.png) no-repeat 95% center
+          background-size 50px
+        .skill span
+          display block
+          width 60%
+          margin 8px 0px
+          padding 5px
+          border-radius 10px
+          background #fff
+          border 3px solid #F2784B
+          text-align center
+          box-sizing border-box
+      .detail_text
+        padding 3% 0 0
+        font-size 14px
+  #come
+    border-top 3px solid #fff
+    background #009264
+    color #fff
+    padding 0 0 10%
+    h2
+      padding 5% 0
+      font-size 25px
+      text-align center
+      line-height 1.4
+      font-weight normal
+      span
+        font-size 40px
+        font-weight bold
+        display inline !important
+    h3
+      width 90%
+      margin 0 auto 5%
+      font-size 20px
+      text-align center
+
+.wrapper_rank
+  position relative
+  width 100%
+  max-width 750px
+  margin 0 auto
+  &:after
+    content ""
+    position fixed
+    z-index -1
+    top 0
+    left 0
+    width 100%
+    height 100vh
+    background #7FDEF4 url(../img/firstview.png) no-repeat center bottom
+    background-size 100% auto
+  .firstview
+    width 100%
+    height 100vh
+    h1
+      width 80%
+      margin 0 auto
+      padding 5% 0 0
+      img
+        width 100%
+    h2
+      font-size 22px
+      font-weight bold
+      text-align center
+      padding 0 0 1%
+    .scroll
+      font-size 14px
+      font-weight bold
+      text-align center
+      padding 0 0 5%
+    .top-rank-list
+      width 90%
+      margin 0 auto
+      li
+        height 25vw
+        margin 0 0 15px
+        padding 2% 0 0 25%
+        box-sizing border-box
+        &:nth-child(1)
+          background #fff url(../img/rank1.png) no-repeat 5% center
+          background-size 60px
+        &:nth-child(2)
+          background #fff url(../img/rank2.png) no-repeat 5% center
+          background-size 60px
+        &:nth-child(3)
+          background #fff url(../img/rank3.png) no-repeat 5% center
+          background-size 60px
+        .title
+          position relative
+          margin 0 0 1% !important
+          padding 5% 0 4%
+          font-size 25px
+          max-width 84%
+          height 1em
+          overflow hidden
+        .date
+          font-size 18px
+          text-align right
+          padding 0 8% 0 0
+    .rank_btn
+      padding 2% 0 0
+  .sub_contents
+    padding 1% 0
+    border-top 3px solid #fff
+    h2
+      position relative
+      color #000
+      font-size 30px
+      font-weight bold
+      text-align center
+      padding 5% 0
+    ul
+      li
+        width 90%
+        height 20vw
+        margin 0 auto 5%
+        padding 2%
+        background #fff
+        .title
+          position relative
+          margin 0 0 3.5% !important
+          padding 3% 3% 2.5%
+          font-size 20px
+          height 1em
+          overflow hidden
+        .date
+          font-size 14px
+          text-align right
+          padding 0 2% 0 0
+      .rank_btn
+        margin 15% auto 10%

@@ -1,5 +1,79 @@
-header.index_header
-  p topです
-  p
-    a(href="ago.html") agoへ
-  p#app
+article.wrapper
+  section#firstview
+    h1
+      //- img(src='../img/T6.png', alt='HOME GOLF')
+    p.rank_btn
+      a(href='./rank.html') ランキングを見る
+  section#about
+    h2.under_line_1 HOME GOLFとは
+    p.title_text.mv_1
+      | ゴルフがLOVEな人必見♪
+      br
+      | 自分の部屋でゴルフができるゴルフ好きにはたまらないwebアプリがH424で遊ぶことができます。
+      br
+      | 操作はとっても簡単なので、ゴルフ好きの方はもちろん、そうでない方もH424で楽しくゴルフをやりましょう！！
+  section#flow
+    h2.under_line_1 使い方
+    .flow_detail.first.mv_1
+      h3
+        span.number 1.
+        | ゴルフスタート！
+      p.image_wrap
+        img(src='../img/page1.png', alt='page1')
+      p.detail_text
+        | TOPページのSTARTボタンからアプリを行うことができます。
+    .flow_detail.second.mv_1
+      h3
+        span.number 2.
+        | 使用するスキルの選択
+      p.image_wrap
+        img(src='../img/page2.png', alt='page2')
+      .skill_wrap
+        p.skill.skill_1
+          span パワーショット
+          | (打つ力が1.5倍)
+        p.skill.skill_2
+          span ノーリフレクション
+          | (壁の反射回数を-10回)
+        p.skill.skill_3
+          span デカカップ
+          | (カップの大きさを1.5倍にする)
+        p.skill.skill_4
+          span 晴れ男
+          | (天気を晴れに固定)
+      p の4つのスキルから選択することができます。
+    .flow_detail.third.mv_1
+      h3
+        span.number 3.
+        | Let's play
+      p.image_wrap
+        img(src='../img/page3.png', alt='page3')
+      p.detail_text
+        | スキルを選択したらゴルフスタート！
+        br
+        | 操作はボールをスワイプするだけ！とっても簡単に遊べます。
+    .flow_detail.fourth.mv_1
+      h3
+        span.number 4.
+        | 自分のスコアを確認
+      p.image_wrap
+        img(src='../img/page4.png', alt='result')
+      p.detail_text
+        | ゴルフが終わったらモニターをチェック！
+        br
+        | 自分のスコアが表示されます。
+        br
+        | スマートフォンサイトから全体のランキングも見ることができるので、自分のランキングもチェックしてください！！
+  section#come
+    h2
+      | ブースは
+      span.under_line_1 H424
+      | です。
+      br
+      | ぜひお越しください。
+    h3
+      | 全体のランキングは
+      br
+      | こちらからCHECK！！
+    p.rank_btn
+      a(href='./rank.html') ランキングを見る

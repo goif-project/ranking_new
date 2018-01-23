@@ -48,9 +48,9 @@ module.exports = {
       template: './pug/index.pug'
     }),
     new htmlWebpackPlugin({
-      title: 'AGO',
-      filename: 'ago.html',
-      template: './pug/ago.pug'
+      title: 'RANK',
+      filename: 'rank.html',
+      template: './pug/rank.pug'
     }),
     /*
     new htmlWebpackPlugin({
