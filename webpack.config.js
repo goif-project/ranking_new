@@ -49,7 +49,7 @@ module.exports = {
     }),
     new htmlWebpackPlugin({
       title: 'RANK',
-      filename: 'rank.html',
+      filename: 'rank/index.html',
       template: './pug/rank.pug'
     }),
     /*
