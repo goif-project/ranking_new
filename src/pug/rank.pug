@@ -5,14 +5,17 @@ head
   meta(name='format-detection', content='telephone=no')
 body
   article.wrapper_rank
-    section.firstview
+    section#firstview
       h1 HOME GOLF
       h2 -ランキング-
-      p.scroll スクロールするとランキングもっと見れる！！
+      p.scroll 
+        | 4位以降はスクロールすると
+        br
+        | 見ることができます。
       ul#top-rank-list.top-rank-list
       p.rank_btn
         a(href='../') TOPへ戻る
-    section.sub_contents
+    section#sub_contents
       h2.under_line_1 4 ~ 20 位
       ul#sub_rank.sub_rank
       h2.under_line_1 50 位

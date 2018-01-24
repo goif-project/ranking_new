@@ -96,34 +96,17 @@ input, textarea, button
 .title_text, .detail_text
   line-height 1.666
 
-.mv_1
-  position relative
-  opacity 0
-  transform translateY(10px)
-  transition 1s cubic-bezier(0.33, 0.065, 0, 1)
-  transition-delay .25s
-
-.mv_2
-  opacity 1.0
-  transform translate(0, 0)
-
 .under_line_1
   position relative
   display table
   margin 0 auto
-
-.under_line_2
-  position relative
-  display inline-block
-
-.under_line_1
-  :before
+  &:before
+    content ""
     position absolute
     top calc(35% + 25px)
     left 0
-    content ""
     display inline-block
-    width 0
+    width 100%
     height 5px
     background #e6ff1d
     border-radius 10px
@@ -131,11 +114,14 @@ input, textarea, button
     transition-delay .15s
 
 .under_line_2
-  :before
+  position relative
+  display inline-block
+  &:before
+    content ""
     position absolute
+    width 100%
     top calc(35% + 25px)
     left 0
-    content ""
     display inline-block
     width 0
     height 5px
@@ -143,10 +129,6 @@ input, textarea, button
     border-radius 10px
     transition 1s cubic-bezier(0.755, 0, 0.135, 1)
     transition-delay .15s
-
-.under_line_view
-  :before
-    width 100%
 
 .wrapper
   height 100%
@@ -162,7 +144,7 @@ input, textarea, button
     h1
       width 80%
       margin 0 auto
-      padding-top calc(10% + 130px)
+      padding-top 50%
       background url(../img/T6.png) no-repeat center bottom
       background-size 100% auto
       text-indent -9999px
@@ -281,23 +263,17 @@ input, textarea, button
   max-width 750px
   margin 0 auto
   padding 0 0 5%
-  &:after
-    content ""
-    position fixed
-    z-index -1
-    top 0
-    left 0
-    width 100%
-    height 100vh
-    background #7FDEF4 url(../img/firstview.png) no-repeat center bottom
+  background #009264
+  #firstview
+    position relative
+    background url(../img/firstview.png) no-repeat center top
     background-size 100% auto
-  .firstview
-    width 100%
-    height 100vh
+    height 100%
+    max-height 667px
     h1
       width 80%
       height 23vw
-      margin 5% auto 0
+      margin 0 auto
       padding 5% 0 0
       background url(../img/T6.png) no-repeat center
       background-size 100% auto
@@ -343,12 +319,12 @@ input, textarea, button
           padding 0 8% 0 0
     .rank_btn
       padding 2% 0 0
-  .sub_contents
+  #sub_contents
     padding 1% 0
     border-top 3px solid #fff
     h2
       position relative
-      color #000
+      color #fff
       font-size 30px
       font-weight bold
       text-align center
@@ -373,3 +349,9 @@ input, textarea, button
           padding 0 2% 0 0
       .rank_btn
         margin 15% auto 10%
+@media (min-width: 500px)
+  .wrapper,.wrapper_rank
+    #firstview
+      height auto
+      max-height none
+      padding 0 0 5%
