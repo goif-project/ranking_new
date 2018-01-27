@@ -13,8 +13,8 @@ module.exports = {
   },
   output: {
     path: buildDir,
-    publicPath: '/',
-    filename: 'js/bundle.js',
+    publicPath: '/homegolf',
+    filename: './js/bundle.js',
   },
 
   module: {

@@ -12,6 +12,9 @@ function Query(){
      console.log(data);
      var num = 0
      for(var i in data.list){
+       //rank表示
+       var ranking = 0;
+       ranking = Number(i) + Number(1);
        //1位から3位
        if(i < 3){
          var str = "";
@@ -22,26 +25,30 @@ function Query(){
          $('#top-rank-list').append(str);
          $(".under_line_2").addClass("under_line_view");
        }
+
+       console.log(ranking)
        //4位から20位
-       if(i >= 3 && i<20){
+       if(i >= 3 && i<50){
          var str = "";
          str += "<li>";
+         str += "<p class='ranking'>"+ranking+"位</p>";
          str += "<p class='title'>"+data.list[i].user_name+"</p>";
          str += "<p class='date'>"+data.list[i].score+" 点</p>";
          str += "</li>";
          $('#sub_rank').append(str);
        }
        //50位
-       if(i == 49){
+       if(i >= 50 && i < 100){
          var str = "";
          str += "<li>";
+         str += "<p class='ranking'>"+ranking+"位</p>";
          str += "<p class='title'>"+data.list[i].user_name+"</p>";
          str += "<p class='date'>"+data.list[i].score+" 点</p>";
          str += "</li>";
          $('#rank50th').append(str);
        }
        //100位
-       if(i == 99){
+       if(i == 100){
          var str = "";
          str += "<li>";
          str += "<p class='title'>"+data.list[i].user_name+"</p>";
